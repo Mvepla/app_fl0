@@ -120,8 +120,8 @@ def predict_form():
     return render_template("form.html", prediction = "N/A")
 
 if __name__ == "__main__":
-    engine= create_engine("sqlite:///./predictions.db")
-    #engine= create_engine("postgresql://fl0user:WQoFRVutI1K4@ep-steep-dew-56828010.eu-central-1.aws.neon.fl0.io:5432/database?sslmode=require")
+    #engine= create_engine("sqlite:///./predictions.db")
+    engine= create_engine("postgresql://fl0user:ekSzNniP0r6c@ep-shrill-salad-76257601.eu-central-1.aws.neon.fl0.io:5432/database?sslmode=require")
     with open("modelo.pkl",  "rb") as f:
         loaded_model = pickle.load(f)
     app.run(debug=True, port=8080)
