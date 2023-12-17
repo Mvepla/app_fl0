@@ -2,12 +2,9 @@ from flask import Flask, request, jsonify, render_template
 import pandas as pd
 from datetime import datetime
 import pickle
-import matplotlib.pyplot as plt
 from sqlalchemy import create_engine, text
 import io
 from flask import Response
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-from matplotlib.figure import Figure
 
 #engine= create_engine("sqlite:///./base_datos/predictions.db")
 #engine = create_engine("postgresql://postgres:password@database-1.ciesmwidx3x0.eu-north-1.rds.amazonaws.com:5432/postgres")
